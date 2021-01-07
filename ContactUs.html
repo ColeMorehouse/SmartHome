@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<body>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LatinLocator</title>
+</head>
+
+
+<div id="topBar">
+
+
+<div id="small">
+
+<div id="banner" style="height: 25%; background-color: rgba(255, 255, 255, 1); padding-bottom: 32vh;">
+
+<div id="farLeft">
+</div>
+<div id="mid">
+
+  <img class="logo" src="NewestLogoBordor.png" alt="Ls" onclick="location='FirstV3.html'">
+  <div id="buff" style="width: 0%;">
+  </div>
+  <div id="newBar">
+
+  <div id="blocks">
+    <a href="ContactUs.html" style="border-left: 1px solid black; border-bottom: 1px solid black;">ABOUT US</a>
+    <a href="AboutUs.html" style="border-left: 1px solid black; border-bottom: 1px solid black;">DATABASES</a>
+
+
+
+  </div>
+</div>
+</div>
+
+
+<div id="wrapper">
+
+<div id="farRight" style="border-bottom: 1px solid black;">
+  <div id="box">
+    <div id="squares">
+      <div id="bar1">
+      </div>
+      <div id="bar2">
+      </div>
+      <div id="bar3">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="dropdown" style="border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;">
+
+  <a style="display: flex; height: 50%; width: 100%; justify-content: center; align-items: center; font-family: ROMAN; border-bottom: 1px solid black; ">Sign in</a>
+  <a style="display: flex; height: 50%; width: 100%; justify-content: center; align-items: center; font-family: ROMAN;">Sign up</a>
+
+
+</div>
+
+</div>
+<div class="grid-container-two" style="width:100%; height: 100%;">
+<h1 style="grid-row: 1; grid-column: 3 / span 2; width: 100%; color: 333333; margin-top: 0; font-size: 5vh ; font-family: GorditaLight;">  Cole's Personal Data <br> is your Personal Right!<br> </h1>
+<h2 style="grid-row: 2; grid-column: 3 / span 2; color: 333333; font-family: GorditaLightItalic;">"ALL THAT HAPPENS MUST BE KNOWN"</h2>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="grid-container">
+
+
+<div style="grid-row: 1; grid-column: 1;"> </div>
+
+<div style="grid-row: 1; grid-column: 2 / span 2;background-color: white;">
+  <h1 style="font-family: GorditaLight; text-decoration: underline; "> At a Glance </h1>
+</div>
+<div style="grid-row: 2 / span 2; grid-column: 2 / span 2;">
+  <div class="grid-container-four" style="width: 100%; height: 80%; background-color: white; ">
+     <div style="grid-row: 1; grid-column: 1;"></div>
+     <div style="grid-row: 1; grid-column: 2; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%; font-family: Gordita;">Lights: </h3><h3 style="font-family: Gordita; font-size: 100%; ">ON</h3></div>
+     <div style="grid-row: 1; grid-column: 3; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Temperture: </h3><h3 style="font-family: Gordita; font-size: 100%;">74</h3></div>
+     <div style="grid-row: 1; grid-column: 4; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Location: </h3><h3 style="font-family: Gordita; font-size: 100%;">UNKOWN</h3></div>
+     <div style="grid-row: 1; grid-column: 5;"></div>
+  </div>
+</div>
+
+
+<div style="grid-row: 4; grid-column: 2 / span 2; background-color: white;">
+  <h1 style="height: 100%; font-family: GorditaLight; text-decoration: underline; "> Control </h1>
+</div>
+<div style="grid-row: 5 / span 2; grid-column: 2 / span 2; background-color: white;">
+  <div class="grid-container-two" style="width: 100%; height: 100%; background-color: white;">
+     <div style="grid-row: 1 /span 2; grid-column: 1;"> </div>
+     <div style="grid-row: 1 /span 2; grid-column: 2; display: flex; align-items: center; justify-content: center;"><a onclick="lightOn()" id ="fb" class="fa fa-facebook" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url('LightOnYellow.png'); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 3; display: flex; align-items: center; justify-content: center;"><a onclick="lightOff()" id ="tw" class="fa fa-twitter" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url('LightOffYellow.png'); background-size: 80%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 4; display: flex; align-items: center; justify-content: center;"><a onclick="fanOn()" id ="ig" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url('FanOnYellow.png'); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 5; display: flex; align-items: center; justify-content: center;"><a onclick="fanOff()" id ="ig2" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url('FanOffYellow.png'); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 6; "> </div>
+  </div>
+</div>
+
+
+
+<div style="grid-row: 7; grid-column: 2 / span 2; background-color: white;">
+  <h1 style="font-family: GorditaLight; font-decoration: underline; ">Visit one of our offices</h1>
+</div>
+
+<div style="grid-row: 8 / span 3; grid-column: 1; background-color: white;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.97431140773!2d-77.06265558484043!3d38.901702754295854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b64c486427bf%3A0x7604542a7bffc04!2s3050%20K%20St%20NW%2C%20Washington%2C%20DC%2020007!5e0!3m2!1sen!2sus!4v1595354794160!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+<div style="grid-row: 8 / span 3; grid-column: 2; background-color: white; display: flex; align-items: center; justify-content: center;"><h2 style="font-size: 100%; text-decoration: underline; font-family: GorditaLightItalic; ">3050 K Street<br> Washington D.C, 20007 </h2></div>
+<div style="grid-row: 8 / span 3; grid-column: 3; background-color: white; display: flex; align-items: center; justify-content: center;"><h2 style="font-size: 100%; text-decoration: underline; font-family: GorditaLightItalic;">11718 Bowman Green Drive <br> Reston, VA 20190 </h2></div>
+<div style="grid-row: 8 / span 3; grid-column: 4; background-color: white;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.3213790199065!2d-77.35502218483879!3d38.96232905071958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b637df83c66121%3A0xda9da2f5df155104!2s11718%20Bowman%20Green%20Dr%2C%20Reston%2C%20VA%2020190!5e0!3m2!1sen!2sus!4v1595354917351!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+
+</div>
+
+<div id ="footer">
+  <p>
+  3000 K Street<br> Washington D.C, 20007 <br>
+  </p>
+  <p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </p>
+  <p>
+11718 Bowman Green Drive <br> Reston, VA 20190 <br>  </p>
+</div>
+
+<div style="height: 8%; width: 100%;">
+</div>
+
+<style>
+
+html
+{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+background-color: white;
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+
+iframe
+{
+  object-fit:cover;
+}
+
+.logo:hover
+{
+  cursor: pointer;
+}
+
+@font-face
+{
+   font-family: "Gordita";
+   src: url(GorditaRegular.otf);
+   font-weight: normal;
+}
+
+@font-face
+{
+  font-family: "GorditaLightItalic";
+  src: url(Gordita_Light_Italic.otf);
+  font-weight: lighter;
+}
+
+@font-face
+{
+  font-family: "ROMAN";
+  src: url(Baskervville-Regular.otf);
+}
+
+@font-face
+{
+  font-family: "GorditaLight";
+  src: url(Gordita_Light.otf);
+}
+
+.grid-container
+{
+  display: grid;
+  background-color: white;
+
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-container-two
+{
+  display: grid;
+  background-color: white;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-container-four
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+#video-container
+{
+    object-fit:cover;
+    background-color: red;
+}
+
+#newBar
+{
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+
+
+#bar1, #bar2, #bar3
+{
+  width: 80%;
+  height: 12%;
+  background-color: #fede32;
+  margin-left: 10%;
+  float;
+  margin-top: 14%;
+    border-radius: 25px;
+}
+
+#squares
+{
+  height: 74%;
+  width: 100%;
+  background-color: purple;
+  bottom: 0;
+  position: absolute;
+
+}
+
+#LargeBox
+{
+  background-color: white;
+
+}
+
+#block
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid black;
+  font-size: 120%;
+  display: inline-block;
+  float: right;
+}
+
+#block:hover
+{
+  cursor: pointer;
+
+}
+
+#blocks a
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1vw;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 1;
+  font-weight: bold;
+  font-family: "ROMAN";
+}
+
+#blocks a:hover
+{
+  cursor: pointer;
+  color: black;
+  background-color: darkgray;
+
+}
+
+#blocks
+{
+
+  width: 90%;
+  height: 100%;
+  font-size: 140%;
+  display: inline-block;
+  float: right;
+
+}
+
+#dropdown a
+{
+  height: 500%;
+  width: 50%;
+  font-weight: bold;
+  font-size: 140%;
+  color: blue;
+}
+
+#dropdown a:hover
+{
+  cursor: pointer;
+  background-color: darkgray;
+}
+
+#mid
+{
+  width: 95%;
+  height: 80%;
+  float: left;
+  color: black;
+  display: flex;
+  background-color: none;
+
+  align-items: center;
+
+    font-weight: bold;
+
+
+}
+
+
+#mid p
+{
+  font-size: 200%;
+  width: 18%;
+  height: 100%;
+  font-weight: bold;
+  background-color: lightgray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  float: left;
+
+}
+
+#small
+{
+  height: 40%;
+  width: 100%;
+
+}
+
+#wrapper
+{
+  width: 5%;
+  height: 100%;
+  float: right;
+
+}
+
+#dropdown
+{
+  height: 140%;
+  width: 200%;
+  background-color: rgba(128, 0, 128, 0.6);
+  float: right;
+  display: none;
+  color:#fede32;
+}
+
+#dropdown a
+{
+  height: 50%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 120%;
+  color: #fede32;
+}
+
+#dropdown a:hover
+{
+  cursor: pointer;
+  background-color: rgba(128, 0, 128, 1);
+}
+
+
+
+#wrapper:hover #dropdown
+{
+    display: block;
+}
+
+
+
+
+body
+{
+  height: 9px;
+  /*background-image: url("FullColor.gif");*/
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
+
+
+#box
+{
+  background-color: purple;
+  width: 60%;
+  height: 80%;
+  margin:auto;
+  position: relative;
+}
+
+#box: hover
+{
+  cursor: pointer;
+}
+
+#lefty
+{
+  height: 100%;
+  width: 15%;
+  float: left;
+}
+
+#righty
+{
+  height: 100%;
+  width: 15%;
+  float: right;
+}
+
+
+  #footer
+  {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 8%;
+   width: 100%;
+
+   color: black;
+   text-align: center;
+   font-size: 64%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: darkgray;
+   opacity: 0.8;
+
+  }
+
+  #farLeft
+  {
+    height: 80%;
+    width: 0%;
+    float: left;
+    background-color: purple;
+      opacity: 0.6;
+  }
+
+#farRight
+{
+  height: 80%;
+  width: 100%;
+  float: right;
+  background-color: purple;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+  cursor: pointer;
+
+
+
+
+}
+
+
+
+#footer p
+{
+
+   font-weight: bold;
+   width: 33%;
+   color: 333333;
+   font-family: "GorditaLightItalic";
+}
+  #topBar
+  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+
+    text-align: center;
+
+
+
+  }
+
+  #topBuffer
+  {
+    width: 10%;
+    height: 10%;
+    background-color: lightgray;
+       opacity: 0.8;
+  }
+
+  #lefter
+  {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: lightgray;
+       opacity: 0.8;
+  }
+
+
+
+
+
+  #rightBox
+  {
+    background-color: lightgray;
+       opacity: 0.8;
+    width: 75%;
+    height: 100%;
+    float: right;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #buffer
+  {
+    width: 1%;
+    height: 100%;
+    background-color: #8d59fb;
+    float:left;
+  }
+
+
+    .fa {
+      padding: 10px;
+      font-size: 1.5vw;
+      width: 1.5vw;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: purple;
+      color: #fede32;
+    }
+
+    .fa-twitter {
+      background: purple;
+      color: #fede32;
+    }
+
+    .fa-instagram {
+      background: purple;
+      color: #fede32;
+    }
+
+    .fa2 {
+      padding: 10px;
+      font-size: 1.5vw;
+      width: 1.5vw;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa2:hover {
+        opacity: 0.7;
+    }
+
+    .fa2-facebook {
+      background: purple;
+      color: #fede32;
+    }
+
+    .fa2-twitter {
+      background: purple;
+      color: #fede32;
+    }
+
+    .fa2-instagram {
+      background: purple;
+      color: #fede32;
+    }
+
+  img
+  {
+    float: left;
+    width: 20vw;
+    padding-top: 14.5vh;
+    padding-left: -4%;
+    opacity: 1;
+  }
+
+
+</style>
+
+
+
+<script>
+
+//NoLine: ls5j29hb2n
+//Line: esp7nfx3i9
+
+var cw = $('.circleBox').width();
+$('.circleBox').css({'height':cw+'px'});
+
+var fb = $('#fb').width();
+$('#fb').css({'height':fb+'px'});
+
+var tw = $('#tw').width();
+$('#tw').css({'height':tw+'px'});
+
+var ig = $('#ig').width();
+$('#ig').css({'height':ig+'px'});
+
+var ig2 = $('#ig2').width();
+$('#ig2').css({'height':ig2+'px'});
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+{
+ window.location.href = "http://www.LatinLocator.com/UnderConstruction.html";
+}
+
+
+function lightOn() {
+  const Http = new XMLHttpRequest();
+  const url='http://latinlocator.com:5000/';
+  Http.open("GET", url);
+  Http.send();
+
+}
+function lightOff() {
+  const Http = new XMLHttpRequest();
+  const url='http://latinlocator.com:5000/';
+  Http.open("GET", url);
+  Http.send();
+
+}
+function fanOn() {
+  const Http = new XMLHttpRequest();
+  const url='http://latinlocator.com:5000/fanon';
+  Http.open("GET", url);
+  Http.send();
+
+}
+function fanOff() {
+  const Http = new XMLHttpRequest();
+  const url='http://latinlocator.com:5000/fanoff';
+  Http.open("GET", url);
+  Http.send();
+
+}
+
+</script>
+
+</body>
+
+</html>
