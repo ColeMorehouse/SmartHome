@@ -47,7 +47,7 @@
 </div>
 <div id="mid">
 
-  <img class="logo" src="NewestLogoBordor.png" alt="Ls" onclick="location='FirstV3.html'">
+  <img class="logo" src="{{url_for('static', filename='NewestLogoBordor.png')}}" alt="Ls" onclick="location='FirstV3.html'">
   <div id="buff" style="width: 0%;">
   </div>
   <div id="newBar">
@@ -202,27 +202,27 @@ iframe
 @font-face
 {
    font-family: "Gordita";
-   src: url(GorditaRegular.otf);
+   src: {{url_for('static', filename='GorditaRegular.otf')}};
    font-weight: normal;
 }
 
 @font-face
 {
   font-family: "GorditaLightItalic";
-  src: url(Gordita_Light_Italic.otf);
+  src: {{url_for('static', filename='Gordita_Light_Italic.otf')}};
   font-weight: lighter;
 }
 
 @font-face
 {
   font-family: "ROMAN";
-  src: url(Baskervville-Regular.otf);
+  src: {{url_for('static', filename='Baskervville-Regular.otf')}};
 }
 
 @font-face
 {
   font-family: "GorditaLight";
-  src: url(Gordita_Light.otf);
+  src: {{url_for('static', filename='Gordita_Light.otf')}};
 }
 
 .grid-container
