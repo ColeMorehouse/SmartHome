@@ -726,14 +726,23 @@ $('#ig').css({'height':ig+'px'});
 var ig2 = $('#ig2').width();
 $('#ig2').css({'height':ig2+'px'});
 
-var intervalID = setInterval(update_values,1000);
+//var intervalID = setInterval(update_values,1000);
 $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 function update_values()
 {
 $.getJSON($SCRIPT_ROOT + '/_stuff',
   function(data)
   {
-    $('#result').text(data.result);
+    strResult = data.result;
+    if (strResult === "ON")
+    {
+      strResult = "<span style='color: green;>'" + strResult + "</span>";
+    }
+    else
+    {
+      strResult = "<span style='color: red;>'" + strResult + "</span>";
+    }
+    $('#result').text(strResult);
       console.log(data)
   });
 };
