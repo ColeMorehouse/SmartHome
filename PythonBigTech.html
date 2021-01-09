@@ -736,11 +736,11 @@ $.getJSON($SCRIPT_ROOT + '/_stuff',
     strResult = data.result;
     if (strResult === "ON")
     {
-      strResult = "<span style='color: green;'> ON </span>";
+      document.getElementById('timer').style.color = 'green';
     }
     else
     {
-      strResult = "<span style='color: red;'> OFF</span>";
+      document.getElementById('timer').style.color = 'red';
     }
     $('#result').text(strResult);
       console.log(data)
