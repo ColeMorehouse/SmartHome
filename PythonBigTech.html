@@ -43,7 +43,7 @@
 </div>
 <div id="mid">
 
-  <img class="logo" src="{{url_for('static', filename='NewestLogoBordor.png')}}" alt="Ls" onclick="update_values();">
+  <img class="logo" src="/static/NewestLogoBordor.png" alt="Ls" onclick="update_values();">
   <div id="buff" style="width: 0%;">
   </div>
   <div id="newBar">
@@ -114,8 +114,8 @@
   <div class="grid-container-four" style="width: 100%; height: 80%; background-color: white; ">
      <div style="grid-row: 1; grid-column: 1;"></div>
      <div style="grid-row: 1; grid-column: 2; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%; font-family: Gordita;">Lights: </h3><h3 id="result" style="font-family: Gordita; font-size: 100%;"></h3></div>
-     <div style="grid-row: 1; grid-column: 3; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Temperture: </h3><h3 style="font-family: Gordita; font-size: 100%;">na</h3></div>
-     <div style="grid-row: 1; grid-column: 4; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Location: </h3><h3 style="font-family: Gordita; font-size: 100%;">UNKOWN</h3></div>
+     <div style="grid-row: 1; grid-column: 3; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Door: </h3><h3 id="DoorDiv" style="font-family: Gordita; font-size: 100%;">na</h3></div>
+     <div style="grid-row: 1; grid-column: 4; outline: 1px solid black; outline-offset: -1px;"><h3 style="width: 100%;font-family: Gordita;">Location: </h3><h3 id="LocDiv" style="font-family: Gordita; font-size: 100%;"></h3></div>
      <div style="grid-row: 1; grid-column: 5;"></div>
   </div>
 </div>
@@ -127,10 +127,10 @@
 <div style="grid-row: 5 / span 2; grid-column: 2 / span 2; background-color: white;">
   <div class="grid-container-two" style="width: 100%; height: 100%; background-color: white;">
      <div style="grid-row: 1 /span 2; grid-column: 1;"> </div>
-     <div style="grid-row: 1 /span 2; grid-column: 2; display: flex; align-items: center; justify-content: center;"><a onclick="lightOn()" id ="fb" class="fa fa-facebook" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url({{url_for('static', filename='LightOnYellow.png')}}); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
-     <div style="grid-row: 1 /span 2; grid-column: 3; display: flex; align-items: center; justify-content: center;"><a onclick="lightOff()" id ="tw" class="fa fa-twitter" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url({{url_for('static', filename='LightOffYellow.png')}}); background-size: 80%; background-position: center; background-repeat: no-repeat;"></a></div>
-     <div style="grid-row: 1 /span 2; grid-column: 4; display: flex; align-items: center; justify-content: center;"><a onclick="fanOn()" id ="ig" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url({{url_for('static', filename='FanOnYellow.png')}}); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
-     <div style="grid-row: 1 /span 2; grid-column: 5; display: flex; align-items: center; justify-content: center;"><a onclick="fanOff()" id ="ig2" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url({{url_for('static', filename='FanOffYellow.png')}}); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 2; display: flex; align-items: center; justify-content: center;"><a onclick="lightOn()" id ="fb" class="fa fa-facebook" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url(/static/LightOnYellow.png); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 3; display: flex; align-items: center; justify-content: center;"><a onclick="lightOff()" id ="tw" class="fa fa-twitter" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url(/static/LightOffYellow.png); background-size: 80%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 4; display: flex; align-items: center; justify-content: center;"><a onclick="fanOn()" id ="ig" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url(/static/FanOnYellow.png); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
+     <div style="grid-row: 1 /span 2; grid-column: 5; display: flex; align-items: center; justify-content: center;"><a onclick="fanOff()" id ="ig2" class="fa fa-instagram" style="cursor: pointer; width: 60% !important; font-size: 00% !important; display: flex; align-items: center; justify-content: center; background-image: url(/static/FanOffYellow.png); background-size: 75%; background-position: center; background-repeat: no-repeat;"></a></div>
      <div style="grid-row: 1 /span 2; grid-column: 6; "> </div>
   </div>
 </div>
@@ -138,13 +138,9 @@
 
 
 <div style="grid-row: 7; grid-column: 2 / span 2; background-color: white;">
-  <h1 style="font-family: GorditaLight; font-decoration: underline; ">Visit one of our offices</h1>
+  <h1 style="font-family: GorditaLight; font-decoration: underline; ">More Information (Coming Soon)</h1>
 </div>
 
-<div style="grid-row: 8 / span 3; grid-column: 1; background-color: white;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3104.97431140773!2d-77.06265558484043!3d38.901702754295854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b64c486427bf%3A0x7604542a7bffc04!2s3050%20K%20St%20NW%2C%20Washington%2C%20DC%2020007!5e0!3m2!1sen!2sus!4v1595354794160!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-<div style="grid-row: 8 / span 3; grid-column: 2; background-color: white; display: flex; align-items: center; justify-content: center;"><h2 style="font-size: 100%; text-decoration: underline; font-family: GorditaLightItalic; ">3050 K Street<br> Washington D.C, 20007 </h2></div>
-<div style="grid-row: 8 / span 3; grid-column: 3; background-color: white; display: flex; align-items: center; justify-content: center;"><h2 style="font-size: 100%; text-decoration: underline; font-family: GorditaLightItalic;">11718 Bowman Green Drive <br> Reston, VA 20190 </h2></div>
-<div style="grid-row: 8 / span 3; grid-column: 4; background-color: white;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.3213790199065!2d-77.35502218483879!3d38.96232905071958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b637df83c66121%3A0xda9da2f5df155104!2s11718%20Bowman%20Green%20Dr%2C%20Reston%2C%20VA%2020190!5e0!3m2!1sen!2sus!4v1595354917351!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 
 
 </div>
@@ -198,27 +194,27 @@ iframe
 @font-face
 {
    font-family: "Gordita";
-   src: url("{{url_for('static', filename='GorditaRegular.otf')}}");
+   src: url("/static/GorditaRegular.otf");
    font-weight: normal;
 }
 
 @font-face
 {
   font-family: "GorditaLightItalic";
-  src: url("{{url_for('static', filename='Gordita_Light_Italic.otf')}}");
+  src: url("/static/Gordita_Light_Italic.otf");
   font-weight: lighter;
 }
 
 @font-face
 {
   font-family: "ROMAN";
-  src: url("{{url_for('static', filename='Baskervville-Regular.otf')}}");
+  src: url("/static/Baskervville-Regular.otf");
 }
 
 @font-face
 {
   font-family: "GorditaLight";
-  src: url("{{url_for('static', filename='Gordita_Light.otf')}}");
+  src: url("/static/Gordita_Light.otf");
 }
 
 .grid-container
@@ -727,10 +723,40 @@ var ig2 = $('#ig2').width();
 $('#ig2').css({'height':ig2+'px'});
 
 //var intervalID = setInterval(update_values,1000);
-$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+$SCRIPT_ROOT = "";
 function update_values()
 {
-$.getJSON($SCRIPT_ROOT + '/_stuff',
+$.getJSON($SCRIPT_ROOT + '/us',
+  function(data)
+  {
+    strResult = data.result;
+    if (strResult === "DESK")
+    {
+      document.getElementById('LocDiv').style.color = 'green';
+    }
+    else
+    {
+      document.getElementById('LocDiv').style.color = 'red';
+    }
+    $('#LocDiv').text(strResult);
+      console.log(data)
+  });
+$.getJSON($SCRIPT_ROOT + '/door',
+  function(data)
+  {
+    strResult = data.result;
+    if (strResult === "closed")
+    {
+      document.getElementById('DoorDiv').style.color = 'green';
+    }
+    else
+    {
+      document.getElementById('DoorDiv').style.color = 'red';
+    }
+    $('#DoorDiv').text(strResult);
+      console.log(data)
+  });
+$.getJSON($SCRIPT_ROOT + '/stuff',
   function(data)
   {
     strResult = data.result;
